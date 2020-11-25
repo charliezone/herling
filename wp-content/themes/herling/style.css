@@ -1,0 +1,91 @@
+/*
+ * Theme Name: Herling
+ * Author: Carlos Rafael
+ * Author URL: https://www.linkedin.com/in/carlos-rafael-gonzalez-perdomo-457351146
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: herling
+ * Domain Path: /languages
+ */
+
+ /* Header */
+header.cd-header .header-wrapper{
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+header.cd-header .header-wrapper .logo-wrap{
+   position: relative;
+   top: 0;
+}
+
+header.cd-header .header-wrapper .logo-wrap img{
+   height: 100px;
+}
+
+.nav .nav__list-item{
+   line-height: 1.5;
+}
+
+/* Banner */
+
+.section.banner{
+   padding: 0;
+   z-index: -1;
+   height: 408px;
+}
+
+.section.banner h1{
+   width: 55%;
+   color: #d6b885;
+   font-size: 2rem;
+   text-align: right;
+}
+
+.section.banner small{
+   font-size: 1.1rem;
+}
+
+.banner-layer-up{
+   z-index: 1;
+   height: 408px;
+   display: none;
+   margin-top: -408px;
+}
+
+/* Description Section */
+
+.mi-meta ul{
+   padding-left: 0;
+}
+
+.mi-meta ul li{
+   list-style: none;
+}
+
+.mi-meta > div > div:nth-child(1) ul li{
+   text-align: left;
+}
+
+.mi-meta > div > div:nth-child(2) ul li{
+   text-align: right;
+}
+
+/* Quotes Section */
+
+.section.quotes{
+   padding: 0;
+   height: 320px;
+}
+
+#quotes-carousel{
+   height: 120px;
+}
+
+/* Newslleter */
+
+.newslleter input[name="email"]::placeholder{
+   text-align: left;
+}
