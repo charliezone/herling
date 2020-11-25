@@ -54,7 +54,7 @@
 					<div class="section clearfix"></div>
 					<div class="col-md-12 padding-top-bottom">
 						<div class="img-wrap">
-							<img src="img/studio.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/studio.jpg" alt="">
 						</div>
 					</div>
 					<div class="col-md-4 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
@@ -102,7 +102,27 @@
 			</div>
 		</div>
 
-		<div class="section quotes padding-top-bottom over-hide background-dark-3 d-flex align-items-center">
+		<div class="section newslleter padding-top-bottom-big over-hide background-dark-3">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<h4 class="mb-4">Toma 1 minuto de tu tiempo,  piensa bien qué es éso que te hace infeliz.</h4>
+						<h5 class="mb-2">Ahora escríbelo sin pensar y envíamelo.</h5>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-8 ajax-form">
+						<form action="#" class="d-flex justify-content-center">
+							<input class="cursor-link" name="email" type="text"
+								placeholder="Escribe aquí tu correo para saber quién eres tú" autocomplete="off" />
+							<button type="submit">Enviar</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section quotes padding-top-bottom over-hide background-dark d-flex align-items-center">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div id="quotes-carousel" class="carousel slide w-100" data-ride="carousel">
@@ -162,26 +182,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section newslleter padding-top-bottom-big over-hide background-dark">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-8">
-						<h4 class="mb-4">Antes de decir mas de nosotros, es mejor que preguntemos...</h4>
-						<h5 class="mb-2">¿Quién eres tú?</h5>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-md-8 ajax-form">
-						<form action="#" class="d-flex justify-content-center">
-							<input class="cursor-link" name="email" type="text"
-								placeholder="Escribe aquí tu correo para saber quién eres tú" autocomplete="off" />
-							<button type="submit">Enviar</button>
-						</form>
 					</div>
 				</div>
 			</div>
