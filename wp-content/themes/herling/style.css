@@ -86,6 +86,12 @@ header.cd-header .header-wrapper .logo-wrap img{
 
 /* Newslleter */
 
-.newslleter input[name="email"]::placeholder{
+.newslleter input[name="email"]::placeholder,
+.newslleter textarea::placeholder{
    text-align: left;
+}
+
+.newslleter button[type="submit"]{
+   margin: 0;
+   margin-left: auto;
 }

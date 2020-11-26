@@ -107,15 +107,15 @@
 				<div class="row justify-content-center">
 					<div class="col-md-8">
 						<h4 class="mb-4">Toma 1 minuto de tu tiempo,  piensa bien qué es éso que te hace infeliz.</h4>
-						<h5 class="mb-2">Ahora escríbelo sin pensar y envíamelo.</h5>
 					</div>
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-md-8 ajax-form">
-						<form action="#" class="d-flex justify-content-center">
-							<input class="cursor-link" name="email" type="text"
-								placeholder="Escribe aquí tu correo para saber quién eres tú" autocomplete="off" />
-							<button type="submit">Enviar</button>
+						<form action="#" class="d-flex justify-content-center flex-column">
+							<textarea name="mesagge" rows="10" placeholder="Ahora escríbelo sin pensar y envíamelo."></textarea>
+							<input class="cursor-link mt-3" name="email" type="email"
+								placeholder="Déjenos saber quien eres (Correo)" autocomplete="off" />
+							<button class="mt-3" type="submit">Enviar</button>
 						</form>
 					</div>
 				</div>

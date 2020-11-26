@@ -2,12 +2,12 @@
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]>
 <!-->
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 <!--<![endif]-->
 
 <head>
 	<meta charset="utf-8">
-	<title>Herling - If you want it, go and get it</title>
+	<title><?php bloginfo('name'); ?> - <?php the_title() ?></title>
 	<meta name="description"
 		content="El mundo está en tus manos. Lo que hagas con él, es tu elección. Y tu elección traerá consecuencias. Y las consecuencias te harán feliz, o no. Todo depende de ti." />
 	<meta property="og:title" content="Herling - If you want it, go and get it" />
