@@ -9,6 +9,15 @@
  * Domain Path: /languages
  */
 
+ /* General */
+ .section-separator{
+    border-bottom: 2px solid #c1a87e;
+ }
+
+ .heading-color{
+   color: #d6b885;
+ }
+
  /* Header */
 header.cd-header .header-wrapper{
    height: 100%;
@@ -73,6 +82,12 @@ header.cd-header .header-wrapper .logo-wrap img{
    text-align: right;
 }
 
+/* Topics */
+
+.topics p{
+   text-align: justify;
+}
+
 /* Quotes Section */
 
 .section.quotes{
@@ -94,4 +109,18 @@ header.cd-header .header-wrapper .logo-wrap img{
 .newslleter button[type="submit"]{
    margin: 0;
    margin-left: auto;
+}
+
+/* Ornaments */
+
+.ornament-name{
+   top: 490px;
+   left: 35px;
+   position: absolute;
+}
+
+.ornament-logo{
+   right: 35px;
+   bottom: 1050px;
+   position: absolute;
 }

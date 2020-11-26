@@ -55,7 +55,7 @@
 		<header class="cd-header">
 			<div class="header-wrapper">
 				<div class="logo-wrap">
-					<a href="index.html" class="cursor-link animsition-link"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
+					<a href="<?php echo site_url('inicio') ?>" class="cursor-link animsition-link"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
 				</div>
 				<div class="nav-but-wrap">
 					<div class="menu-icon cursor-link">
@@ -75,7 +75,7 @@
 					<li class="nav__list-item"><a href="blog.html" class="cursor-link animsition-link">Blog</a></li>
 					<li class="nav__list-item"><a href="contact.html" class="cursor-link animsition-link">Eventos</a>
 					</li>
-					<li class="nav__list-item"><a href="contact.html" class="cursor-link animsition-link">Contacto</a>
+					<li class="nav__list-item"><a href="<?php echo site_url('contacto') ?>" class="cursor-link animsition-link">Contacto</a>
 					</li>
 				</ul>
 			</div>

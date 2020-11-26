@@ -26,7 +26,7 @@
 					</div>
 					<div class="col-md-8 text-center mi-meta mt-5"
 						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h2 class="mb-3">¿Cuál es mi meta?</h2>
+						<h2 class="mb-3 heading-color">¿Cuál es mi meta?</h2>
 						<div class="row">
 							<div class="col-md-6">
 								<ul class="mb-0 pb-0">
@@ -51,14 +51,27 @@
 							</div>
 						</div>
 					</div>
-					<div class="section clearfix"></div>
-					<div class="col-md-12 padding-top-bottom">
+				</div>
+			</div>
+		</div>
+
+		<div class="section over-hide background-dark-2 section-separator">
+			<div class="container-fluid p-0">
+				<div class="row justify-content-center">
+					<div class="col-md-12">
 						<div class="img-wrap">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/studio.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/banner-home-2.jpg" alt="Banner">
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section topics padding-top-bottom over-hide background-dark-2">
+			<div class="container">
+				<div class="row justify-content-center">
 					<div class="col-md-4 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">Crecimiento Personal</h5>
+						<h5 class="mb-3 heading-color">Crecimiento Personal</h5>
 						<p class="mb-0 pb-0">Cada persona es individual, tiene su propia esencia y de ahí partimos en la
 							forma en que enfocamos el taller. Te damos las herramientas para que cambies los ideales que
 							te fueron inculcados a través de toda tu vida para que la veas desde otra perspectiva. Desde
@@ -66,7 +79,7 @@
 					</div>
 					<div class="col-md-4 text-center mt-5 mt-md-0"
 						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">Emprendedores</h5>
+						<h5 class="mb-3 heading-color">Emprendedores</h5>
 						<p class="mb-0 pb-0">Estaremos trabajando en diferentes formas y proyectos que pueden iniciar,
 							continuar o agregar al crecimiento empresarial. Te damos información de mercadotecnia, de
 							análisis de mercado, fondos para inversión, guía administrativa y estructuración
@@ -75,38 +88,26 @@
 					<div class="section clearfix"></div>
 					<div class="col-md-4 text-center mt-5"
 						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">Rescate Empresarial</h5>
+						<h5 class="mb-3 heading-color">Rescate Empresarial</h5>
 						<p class="mb-0 pb-0">En estos momentos tan fuertes para las empresas, salimos al rescate
 							ayudando a encontrar soluciones a los retos y problemas que presentan actualmente en su
 							negocio.</p>
 					</div>
 					<div class="col-md-4 text-center mt-5"
 						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">Uno a Uno</h5>
+						<h5 class="mb-3 heading-color">Uno a Uno</h5>
 						<p class="mb-0 pb-0">Pasemos unos días maravillosos explorando la vida y sus posibilidades. Todo
 							lo hermoso que nos brinda y las oportunidades de crecimiento profesional.</p>
-					</div>
-					<div class="col-md-4 text-center mt-5"
-						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">¿Que me motiva?</h5>
-						<p class="mb-0 pb-0">Me motiva el poder tener la oportunidad de ayudar a encontrar el camino
-							perdido. La posibilidad, los sueños. Sin ellos estamos muertos por dentro.</p>
-					</div>
-					<div class="col-md-4 text-center mt-5"
-						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">¿Va a ser fácil?</h5>
-						<p class="mb-0 pb-0">No. No va a ser fácil. El proceso de reconocimiento personal puede hacerte
-							llegar a la catarsis. Seré cruda. Seré directa. Es la única manera.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="section newslleter padding-top-bottom-big over-hide background-dark-3">
+		<div class="section newslleter padding-top-bottom-big over-hide background-dark-3 section-separator">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-8">
-						<h4 class="mb-4">Toma 1 minuto de tu tiempo,  piensa bien qué es éso que te hace infeliz.</h4>
+						<h4 class="mb-4 heading-color">Toma 1 minuto de tu tiempo,  piensa bien qué es éso que te hace infeliz.</h4>
 					</div>
 				</div>
 				<div class="row justify-content-center">
@@ -199,5 +200,13 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="ornament-name">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/herling-vertical.png">
+		</div>
+
+		<div class="ornament-logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/icon-vertical.png">
 		</div>
 <?php get_footer() ?>		
