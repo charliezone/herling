@@ -328,13 +328,24 @@
 
 		/* Banner Layer 2 overlay */
 
-		$('.section.banner').css("background", `no-repeat center / 100% url(${site_info.theme_url}/img/banner.jpg)`);
+		$(window).resize(function(){
+			const $ww=$(window).width();
+				
+			if($ww>=993){
+				$('.section.banner').css("background", `no-repeat center / 100% url(${site_info.theme_url}/img/banner.jpg)`);
 
-		$('.banner-layer-up').css("background", `no-repeat center / 100% url(${site_info.theme_url}/img/banner-layer-2.png)`);
+				$('.banner-layer-up').css("background", `no-repeat center / 100% url(${site_info.theme_url}/img/banner-layer-2.png)`);
 
-		setTimeout(function(){
-			$('.banner-layer-up').fadeIn(3000);
-		}, 1500)
+				setTimeout(function(){
+					$('.banner-layer-up').fadeIn(3000);
+				}, 1500);
+
+				console.log('windows resize');
+			}else{
+				$('.section.banner').css("background", 'none');
+				$('.section.banner').css("background", `url(${site_info.theme_url}/img/banner.jpg) top 35% center / 100% no-repeat`);
+			}
+		}).resize();
 			
 	});
  

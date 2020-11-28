@@ -18,6 +18,10 @@
    color: #d6b885;
  }
 
+ .nav-pagination p{
+    font-size: 40px;
+ }
+
  /* Header */
 header.cd-header .header-wrapper{
    height: 100%;
@@ -38,6 +42,8 @@ header.cd-header .header-wrapper .logo-wrap img{
    line-height: 1.5;
 }
 
+/* Home */
+
 /* Banner */
 
 .section.banner{
@@ -46,11 +52,25 @@ header.cd-header .header-wrapper .logo-wrap img{
    height: 408px;
 }
 
+@media screen and (max-width: 992px){
+   .section.banner{
+      height: 450px;
+   }
+}
+
 .section.banner h1{
    width: 55%;
    color: #d6b885;
    font-size: 2rem;
    text-align: right;
+}
+
+@media screen and (max-width: 992px){
+   .section.banner h1{
+      width: 100%;
+      text-align: center;
+      margin-top: 230px;
+   }
 }
 
 .section.banner small{
@@ -62,6 +82,19 @@ header.cd-header .header-wrapper .logo-wrap img{
    height: 408px;
    display: none;
    margin-top: -408px;
+}
+
+@media screen and (max-width: 992px){
+   .banner-layer-up{
+      display: none;
+   }
+}
+
+/* Video */
+
+#home-intro-video{
+   width: 100%;
+   height: auto;
 }
 
 /* Description Section */
@@ -111,6 +144,12 @@ header.cd-header .header-wrapper .logo-wrap img{
    margin-left: auto;
 }
 
+@media screen and (max-width: 992px){
+   .project-link-wrap p{
+      font-size: 40px;
+   }
+}
+
 /* Ornaments */
 
 .ornament-name{
@@ -123,4 +162,23 @@ header.cd-header .header-wrapper .logo-wrap img{
    right: 35px;
    bottom: 1050px;
    position: absolute;
+}
+
+@media screen and (max-width: 992px){
+   .ornament-name,
+   .ornament-logo{
+      display: none;
+   }
+}
+
+/* Contact */
+
+#contacto .project-link-wrap p{
+   font-size: 90px;
+}
+
+@media screen and (max-width: 992px){
+   #contacto .project-link-wrap p{
+      font-size: 20px;
+   }
 }

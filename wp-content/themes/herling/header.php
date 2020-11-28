@@ -72,7 +72,7 @@
 				<ul class="nav__list">
 					<li class="nav__list-item active-nav"><a href="studio.html"
 							class="cursor-link animsition-link">Inicio</a></li>
-					<li class="nav__list-item"><a href="blog.html" class="cursor-link animsition-link">Blog</a></li>
+					<li class="nav__list-item"><a href="<?php echo site_url('blog') ?>" class="cursor-link animsition-link">Blog</a></li>
 					<li class="nav__list-item"><a href="contact.html" class="cursor-link animsition-link">Eventos</a>
 					</li>
 					<li class="nav__list-item"><a href="<?php echo site_url('contacto') ?>" class="cursor-link animsition-link">Contacto</a>

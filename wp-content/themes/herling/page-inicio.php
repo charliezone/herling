@@ -24,6 +24,12 @@
 							elección. Y tu elección traerá consecuencias. Y las consecuencias te harán feliz, o no. Todo
 							depende de ti.</p>
 					</div>
+					<div class="col-md-8 text-center mt-5">
+						<video id="home-intro-video" controls autoplay muted>
+							<source src="<?php echo get_template_directory_uri(); ?>/video/cover-face-herling.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
 					<div class="col-md-8 text-center mi-meta mt-5"
 						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
 						<h2 class="mb-3 heading-color">¿Cuál es mi meta?</h2>
