@@ -190,35 +190,35 @@ header.cd-header .header-wrapper .logo-wrap img{
    justify-content: space-between;
 }
 
-/* #eventos .event:nth-of-type(odd){
-   grid-template-columns: 60% 35%;
-} */
-
-/* #eventos .event:nth-of-type(odd) h3{
-   text-align: right;
+@media screen and (max-width: 992px){
+   #eventos .event{
+      display: flex;
+      flex-direction: column;
+   }
 }
 
-#eventos .event:nth-of-type(odd) button{
-   margin: 0;
-   margin-left: auto;
-} */
-
 #eventos .event h3{
-   font-family: 'Poppins', sans-serif;
-   grid-column: 1;
    grid-row: 1;
+   grid-column: 1;
+   font-family: 'Poppins', sans-serif;
 }
 
 #eventos .event p{
-   text-align: justify;
    grid-row: 2;
+   text-align: justify;
+}
+
+@media screen and (max-width: 992px){
+   #eventos .event p{
+      text-align: left;
+   }
 }
 
 #eventos .event p,
 #eventos .event time,
 #eventos .event address{
-   font-size: 1.1rem;
    font-weight: 400;
+   font-size: 1.1rem;
    font-family: 'Roboto', sans-serif;
 }
 
@@ -231,17 +231,30 @@ header.cd-header .header-wrapper .logo-wrap img{
    grid-row: 3;
 }
 
+@media screen and (max-width: 992px){
+   #eventos .event .date-and-address{
+      flex-direction: column;
+   }
+}
+
 #eventos .event button{
+   margin: 0;
    grid-row: 4;
    grid-column: 1;
-   margin: 0;
    margin-right: auto;
 }
 
+@media screen and (max-width: 992px){
+   #eventos .event button{
+      margin: 0 auto;
+      flex-direction: column-reverse;
+   }
+}
+
 #eventos .event img{
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
    grid-column: 2;
    grid-row: 1 / 5;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
 }
 
 #eventos .event:nth-of-type(even){
@@ -259,6 +272,12 @@ header.cd-header .header-wrapper .logo-wrap img{
    text-align: right;
 }
 
+@media screen and (max-width: 992px){
+   #eventos .event:nth-of-type(even) h3{
+      text-align: left;
+   }
+}
+
 #eventos .event:nth-of-type(even) .date-and-address{
    justify-content: flex-end;
 }
@@ -266,6 +285,12 @@ header.cd-header .header-wrapper .logo-wrap img{
 #eventos .event:nth-of-type(even) button{
    margin: 0;
    margin-left: auto;
+}
+
+@media screen and (max-width: 992px){
+   #eventos .event:nth-of-type(even) button{
+      margin: 0 auto;
+   }
 }
 
 #eventos .event:nth-of-type(even) img{
