@@ -27,7 +27,7 @@
 							<textarea class="cursor-link" name="message" placeholder="Cuéntanos todo"></textarea>
 						</div>
 						<div class="col-md-8 mt-4 ajax-form text-center">
-							<button class="send_message cursor-link" id="send" data-lang="en"><span>Enviar</span></button>
+							<button class="send_message cursor-link" id="send" data-lang="es"><span>Enviar</span></button>
 						</div>
 					</div>	
 				</div>			
