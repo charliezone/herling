@@ -339,8 +339,6 @@
 				setTimeout(function(){
 					$('.banner-layer-up').fadeIn(3000);
 				}, 1500);
-
-				console.log('windows resize');
 			}else{
 				$('.section.banner').css("background", 'none');
 				$('.section.banner').css("background", `url(${site_info.theme_url}/img/banner.jpg) top 35% center / 100% no-repeat`);

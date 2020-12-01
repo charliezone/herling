@@ -19,27 +19,41 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+                    <?php 
+                        ob_start();
+                        $args = array( 
+                        'post_type' => 'eventos_cpt',
+                        'posts_per_page' => 7,
+                        'meta_key'          => 'fecha',
+                        'orderby'           => 'meta_value_num',
+                        'order'             => 'DESC'
+                    );
+                    $posts_query = new WP_Query;
+                    $posts_query->query( $args );
+                    if ($posts_query->have_posts()) {
+                        while($posts_query->have_posts()){
+                        $posts_query->the_post();
+                    ?>
                         <div class="event ajax-form bg-white p-2 py-md-5 py-3 p-md-5 mt-3">
-                            <h3 class="title text-dark font-weight-bold">Nombre del evento</h3>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/lets-go.jpg" class="img-fluid">
-                            <p class="description text-dark mt-3 mt-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore inventore rem ad? Consectetur, adipisci doloremque. Ex, fuga nisi architecto excepturi, consectetur nesciunt incidunt porro magni facere minima optio! Earum.</p>
+                            <h3 class="title text-dark font-weight-bold"><?php the_title() ?></h3>
+                            <img src="<?php the_field('imagen') ?>" class="img-fluid">
+                            <p class="description text-dark mt-3 mt-md-0"><?php the_field('descripcion') ?></p>
                             <div class="date-and-address d-flex">
-                                <time class="mr-3 text-dark" datetime="2008-02-14 20:00"><i class="fa fa-calendar mr-1"></i> 03 - 06 de Diciembre</time>
-                                <address class="text-dark"><i class="fa fa-map-marker mr-1"></i> Olas Tulum, Tulum</address>
+                                <time class="mr-3 text-dark" datetime="2008-02-14 20:00"><i class="fa fa-calendar mr-1"></i> <?php the_field('fecha') ?></time>
+                                <address class="text-dark"><i class="fa fa-map-marker mr-1"></i> <?php the_field('lugar') ?></address>
                             </div>
-                            <button class="send_message cursor-link d-flex align-items-center" id="send" data-lang="es"><span>Contactar</span> <i class="fa fa-whatsapp ml-1"></i></button>
+                            <a class="event-cta" href="https://wa.link/vj1zpq" target="_blank" class="send_message cursor-link d-flex align-items-center" id="send" data-lang="es"><span>Contactar</span> <i class="fa fa-whatsapp ml-1"></i></a>
                         </div>
-
-                        <div class="event ajax-form bg-white p-2 py-md-5 py-3 p-md-5 mt-3">
-                            <h3 class="title text-dark font-weight-bold">Nombre del evento</h3>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/lets-go.jpg" class="img-fluid">
-                            <p class="description text-dark mt-3 mt-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore inventore rem ad? Consectetur, adipisci doloremque. Ex, fuga nisi architecto excepturi, consectetur nesciunt incidunt porro magni facere minima optio! Earum.</p>
-                            <div class="date-and-address d-flex">
-                                <time class="mr-3 text-dark" datetime="2008-02-14 20:00"><i class="fa fa-calendar mr-1"></i> 03 - 06 de Diciembre</time>
-                                <address class="text-dark"><i class="fa fa-map-marker mr-1"></i> Olas Tulum, Tulum</address>
-                            </div>
-                            <button class="send_message cursor-link d-flex align-items-center" id="send" data-lang="es"><span>Contactar</span> <i class="fa fa-whatsapp ml-1"></i></button>
-                        </div>
+                    <?php
+                        }
+                    }
+                        wp_reset_postdata();
+                
+                        /* Get the buffered content into a var */
+                        $events = ob_get_contents();
+                        ob_end_clean();
+                        echo $events;
+                    ?>
                     </div>
                 </div>
             </div>

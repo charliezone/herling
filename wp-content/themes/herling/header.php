@@ -12,18 +12,15 @@
 		content="El mundo está en tus manos. Lo que hagas con él, es tu elección. Y tu elección traerá consecuencias. Y las consecuencias te harán feliz, o no. Todo depende de ti." />
 	<meta property="og:title" content="Herling - If you want it, go and get it" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:image:width" content="470" />
-	<meta property="og:image:height" content="246" />
-	<meta property="og:site_name" content="" />
+	<meta property="og:url" content="http://herling.vip" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/share.jpg" />
+	<meta property="og:site_name" content="Herling Vip" />
 	<meta property="og:description" content="El mundo está en tus manos. Lo que hagas con él, es tu elección" />
-	<meta name="twitter:card" content="" />
-	<meta name="twitter:site" content="https://twitter.com/IvanGrozdic" />
-	<meta name="twitter:domain" content="http://ivang-design.com/" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:description" content="Professional Creative Template" />
-	<meta name="twitter:image" content="http://ivang-design.com/" />
+	<meta name="twitter:site" content="https://www.twitter.com/herling.vip" />
+	<meta name="twitter:domain" content="http://herling.vip" />
+	<meta name="twitter:title" content="Herling - If you want it, go and get it" />
+	<meta name="twitter:description" content="Herling - If you want it, go and get it" />
+	<meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/img/share.jpg" />
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -34,10 +31,10 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
-	<link rel="apple-touch-icon" href="favicon-standard-iphone.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon-standard-ipad.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon-retina-iphone.png">
+	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon-standard-iphone.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/favicon-standard-ipad.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/favicon-retina-iphone.png">
 
     <?php wp_head() ?>
 </head>
@@ -55,7 +52,7 @@
 		<header class="cd-header">
 			<div class="header-wrapper">
 				<div class="logo-wrap">
-					<a href="<?php echo site_url('inicio') ?>" class="cursor-link animsition-link"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
+					<a href="<?php echo site_url('inicio') ?>" class="cursor-link animsition-link"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" ></a>
 				</div>
 				<div class="nav-but-wrap">
 					<div class="menu-icon cursor-link">
@@ -70,12 +67,12 @@
 		<div class="nav">
 			<div class="nav__content">
 				<ul class="nav__list">
-					<li class="nav__list-item active-nav"><a href="studio.html"
+					<li class="nav__list-item <?php if(is_page('inicio')) echo 'active-nav' ?>"><a href="<?php echo site_url() ?>"
 							class="cursor-link animsition-link">Inicio</a></li>
-					<li class="nav__list-item"><a href="<?php echo site_url('blog') ?>" class="cursor-link animsition-link">Blog</a></li>
-					<li class="nav__list-item"><a href="contact.html" class="cursor-link animsition-link">Eventos</a>
+					<li class="nav__list-item <?php if(is_blog()) echo 'active-nav' ?>"><a href="<?php echo site_url('blog') ?>" class="cursor-link animsition-link">Blog</a></li>
+					<li class="nav__list-item <?php if(is_page('eventos')) echo 'active-nav' ?>"><a href="<?php echo site_url('eventos') ?>" class="cursor-link animsition-link">Eventos</a>
 					</li>
-					<li class="nav__list-item"><a href="<?php echo site_url('contacto') ?>" class="cursor-link animsition-link">Contacto</a>
+					<li class="nav__list-item <?php if(is_page('contacto')) echo 'active-nav' ?>"><a href="<?php echo site_url('contacto') ?>" class="cursor-link animsition-link">Contacto</a>
 					</li>
 				</ul>
 			</div>
