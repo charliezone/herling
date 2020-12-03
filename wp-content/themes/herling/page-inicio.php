@@ -118,12 +118,7 @@
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-md-8 ajax-form">
-						<form action="#" class="d-flex justify-content-center flex-column">
-							<textarea name="mesagge" rows="10" placeholder="Ahora escríbelo sin pensar y envíamelo."></textarea>
-							<input class="cursor-link mt-3" name="email" type="email"
-								placeholder="Déjenos saber quien eres (Correo)" autocomplete="off" />
-							<button class="mt-3" type="submit">Enviar</button>
-						</form>
+						<?php echo do_shortcode('[contact-form-7 id="38" title="User feedback" html_class="d-flex justify-content-center flex-column"]') ?>
 					</div>
 				</div>
 			</div>

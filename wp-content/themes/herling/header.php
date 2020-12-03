@@ -7,7 +7,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title><?php bloginfo('name'); ?> - <?php the_title() ?></title>
+	<title><?php bloginfo('name'); ?> - <?php echo (!is_blog()) ? get_the_title() : 'Blog' ?></title>
 	<meta name="description"
 		content="El mundo está en tus manos. Lo que hagas con él, es tu elección. Y tu elección traerá consecuencias. Y las consecuencias te harán feliz, o no. Todo depende de ti." />
 	<meta property="og:title" content="Herling - If you want it, go and get it" />

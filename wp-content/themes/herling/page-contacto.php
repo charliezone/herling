@@ -15,22 +15,8 @@
 		
 			<div class="section padding-bottom-big over-hide background-dark-2">
 				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-md-4 ajax-form">
-							<input class="cursor-link" name="name" type="text" placeholder="Tu nombre: *" autocomplete="off"/>
-						</div>
-						<div class="col-md-4 mt-4 mt-md-0 ajax-form">
-							<input class="cursor-link" name="email" type="text"  placeholder="Correo: *" autocomplete="off"/>
-						</div>
-						<div class="section clearfix"></div>
-						<div class="col-md-8 mt-4 ajax-form">
-							<textarea class="cursor-link" name="message" placeholder="Cuéntanos todo"></textarea>
-						</div>
-						<div class="col-md-8 mt-4 ajax-form text-center">
-							<button class="send_message cursor-link" id="send" data-lang="es"><span>Enviar</span></button>
-						</div>
-					</div>	
-				</div>			
+					<?php echo do_shortcode('[contact-form-7 id="29" title="Contact form 1"]') ?>
+				</div>
 			</div>
 		
 			<div class="section padding-top-bottom-big over-hide background-dark">

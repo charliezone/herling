@@ -134,13 +134,14 @@ header.cd-header .header-wrapper .logo-wrap img{
 
 /* Newslleter */
 
-.newslleter input[name="email"]::placeholder,
+.newslleter input[name="your-email"]::placeholder,
 .newslleter textarea::placeholder{
    text-align: left;
 }
 
 .newslleter button[type="submit"]{
    margin: 0;
+   display: block;
    margin-left: auto;
 }
 
@@ -237,15 +238,29 @@ header.cd-header .header-wrapper .logo-wrap img{
    }
 }
 
-#eventos .event button{
+#eventos .event .event-cta{
    margin: 0;
    grid-row: 4;
+   color: #fff;
+   border: none;
+   outline: none;
+   display: flex;
    grid-column: 1;
+   cursor: pointer;
+   font-size: 13px;
    margin-right: auto;
+   padding: 12px 25px;
+   text-align: center;
+   letter-spacing: 2px;
+   align-items: center;
+   text-transform: uppercase;
+   background-color: #212121;
+   transition: all 250ms linear;
+   -webkit-transition: all 250ms linear;
 }
 
 @media screen and (max-width: 992px){
-   #eventos .event button{
+   #eventos .event .event-cta{
       margin: 0 auto;
       flex-direction: column-reverse;
    }
@@ -264,7 +279,7 @@ header.cd-header .header-wrapper .logo-wrap img{
 #eventos .event:nth-of-type(even) h3,
 #eventos .event:nth-of-type(even) p,
 #eventos .event:nth-of-type(even) .date-and-address,
-#eventos .event:nth-of-type(even) button{
+#eventos .event:nth-of-type(even) .event-cta{
    grid-column: 2;
 }
 
@@ -282,13 +297,13 @@ header.cd-header .header-wrapper .logo-wrap img{
    justify-content: flex-end;
 }
 
-#eventos .event:nth-of-type(even) button{
+#eventos .event:nth-of-type(even) .event-cta{
    margin: 0;
    margin-left: auto;
 }
 
 @media screen and (max-width: 992px){
-   #eventos .event:nth-of-type(even) button{
+   #eventos .event:nth-of-type(even) .event-cta{
       margin: 0 auto;
    }
 }

@@ -27,19 +27,21 @@
 						</a>
 					</article>
                 <?php $i++;
-                endwhile; ?> 
-                    <div class="nav-pagination col-md-12 text-center padding-top d-flex justify-content-between" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-                        <a href="<?php echo get_previous_posts_page_link() ?>" class="cursor-link">
-							<div class="project-link-wrap">
-								<p><< Nuevos</p>
-							</div>
-						</a>
-                        <a href="<?php echo get_next_posts_page_link() ?>" class="cursor-link">
-							<div class="project-link-wrap">
-								<p>Antiguos >></p>
-							</div>
-                        </a>
-                    </div>
+				endwhile; ?> 
+					<?php if($i > 10):?>
+						<div class="nav-pagination col-md-12 text-center padding-top d-flex justify-content-between" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+							<a href="<?php echo get_previous_posts_page_link() ?>" class="cursor-link">
+								<div class="project-link-wrap">
+									<p><< Nuevos</p>
+								</div>
+							</a>
+							<a href="<?php echo get_next_posts_page_link() ?>" class="cursor-link">
+								<div class="project-link-wrap">
+									<p>Antiguos >></p>
+								</div>
+							</a>
+						</div>
+					<?php endif; ?>
                 <?php else : ?>
 					<p>No se encontraron noticias.</p>
 				<?php endif; ?>
