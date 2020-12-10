@@ -96,7 +96,7 @@
 						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
 						<h5 class="mb-3 heading-color">Rescate Empresarial</h5>
 						<p class="mb-0 pb-0">En estos momentos tan fuertes para las empresas, salimos al rescate
-							ayudando a encontrar soluciones a los retos y problemas que presentan actualmente en su
+							ayudando a encontrar soluciones a los retos y problemas que presentan actualmente en tu
 							negocio.</p>
 					</div>
 					<div class="col-md-4 text-center mt-5"

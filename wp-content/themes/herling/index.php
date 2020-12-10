@@ -19,7 +19,7 @@
 				<div class="row justify-content-center">
 				<?php if ( have_posts() ) : $i = 1; while ( have_posts() ) : the_post(); ?>
 					<article class="col-md-12 text-center">
-						<a href="<?php the_permalink() ?>" class="cursor-link-blog-post-<?php echo $i ?> animsition-link tipped" data-title="<span><em>por <?php the_author() ?></em></span>"  data-tipper-options='{"direction":"top","follow":"true","margin":60}'>
+						<a href="<?php the_permalink() ?>" class="cursor-link-blog-post animsition-link tipped" data-title="<span><em>por <?php the_author() ?></em></span>"  data-tipper-options='{"direction":"top","follow":"true","margin":60}'>
 							<div class="blog-post-box">
 								<h5><?php the_title() ?></h5>
                                 <p class="mb-0 mt-2"><?php echo get_the_date() ?></p>

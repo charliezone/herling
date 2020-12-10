@@ -18,7 +18,7 @@
 	})		
 	//Blog page cursors with image	
 	//Blog post 1:
-	/* $(".cursor-link-blog-post-1")
+	/*$(".cursor-link-blog-post-1")
 	.on("mouseenter", function() {	 
 	$('.cursor').addClass("active-blog-post-1")	  
 	})
@@ -72,7 +72,7 @@
 	})
 	.on("mouseleave", function() {	  
 	$('.cursor').removeClass("active-blog-post-7")	  
-	}) */
+	})*/
 	
 	
 	/* Scroll Animation */
