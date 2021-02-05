@@ -42,6 +42,15 @@ header.cd-header .header-wrapper .logo-wrap img{
    line-height: 1.5;
 }
 
+.nav__list-item.active-nav a{
+   color: #d6b885;
+}
+
+.nav__list-item.active-nav a:after,
+.nav__list-item a:hover:after{
+   content: none;
+}
+
 /* Home */
 
 /* Banner */

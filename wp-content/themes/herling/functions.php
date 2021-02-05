@@ -18,7 +18,7 @@ function herling_styles_scripts() {
     //wp_enqueue_style( 'style-animsition', get_template_directory_uri() . '/css/animsition.min.css', array('style-fancybox') );
     //wp_enqueue_style( 'style-theme', get_template_directory_uri() . '/css/style.css', array('style-animsition') );
     wp_enqueue_style( 'style-app', get_template_directory_uri() . '/css/app.css', array('font-roboto') );
-    wp_enqueue_style( 'herling-custom-style', get_stylesheet_uri(), array('style-app'), '1.0.2' );
+    wp_enqueue_style( 'herling-custom-style', get_stylesheet_uri(), array('style-app'), '1.0.3' );
 
     //wp_enqueue_script( 'script-popper', get_template_directory_uri() . '/js/popper.min.js', array('jquery'), '', true );
     //wp_enqueue_script( 'script-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('script-popper'), '', true );
