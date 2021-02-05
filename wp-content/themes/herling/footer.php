@@ -2,7 +2,7 @@
 			<div class="container-fluid px-5">
 				<div class="row">
 					<div class="col-md-6 footer text-center text-md-left">
-						<p>2019 © Todos los derechos reservados</p>
+						<p><?php echo date('Y') ?> © Todos los derechos reservados</p>
 					</div>
 					<div class="col-md-6 mt-4 mt-md-0 text-center">
 						<div class="social-wrap on-footer">
