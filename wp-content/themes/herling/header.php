@@ -72,6 +72,8 @@
 					<li class="nav__list-item <?php if(is_blog()) echo 'active-nav' ?>"><a href="<?php echo site_url('blog') ?>" class="cursor-link animsition-link">Blog</a></li>
 					<li class="nav__list-item <?php if(is_page('eventos')) echo 'active-nav' ?> d-none"><a href="<?php echo site_url('eventos') ?>" class="cursor-link animsition-link">Eventos</a>
 					</li>
+					<li class="nav__list-item <?php if(is_page('proyectos')) echo 'active-nav' ?>"><a href="<?php echo site_url('proyectos') ?>" class="cursor-link animsition-link">Proyectos</a>
+					</li>
 					<li class="nav__list-item <?php if(is_page('videos')) echo 'active-nav' ?> "><a href="<?php echo site_url('videos') ?>" class="cursor-link animsition-link">Videos</a>
 					</li>
 					<li class="nav__list-item <?php if(is_page('contacto')) echo 'active-nav' ?>"><a href="<?php echo site_url('contacto') ?>" class="cursor-link animsition-link">Contacto</a>
